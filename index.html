@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Codevember 6 :: Vue Bitcoin Ticker 2.0</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <script src="https://use.typekit.net/tou5pbt.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+
+    <div class="btc-badge">
+        <div class="card">
+            <p>Gold Buy price</p>
+            <h1>{{ btcUSD }}</h1>
+            <p>Past 24 hours</p>
+            <p :class="upDown" style="font-size:200%;">{{ percentChange }}</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
+            <path d="M50 30L30 40 10 10v80h80V50L70 60"/>
+        </svg>
+        </div>
+    </div>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
+    <script src='https://unpkg.com/axios/dist/axios.min.js'></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
