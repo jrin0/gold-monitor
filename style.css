@@ -17,7 +17,7 @@ body {
 
 .card {
     align-items: center;
-    background-image: linear-gradient(to top right, #141e30, #243b55);
+    background-color: #000;
     border-radius: 0.4em;
     box-shadow: 0 0 66px rgba(0, 0, 0, 0.3);
     display: flex;
@@ -27,7 +27,7 @@ body {
     overflow: hidden;
     padding: 1em;
     position: relative;
-    width: 250px;
+    width: 650px;
     height: 300px;
     z-index: 0;
 }
